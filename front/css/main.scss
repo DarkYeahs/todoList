@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+body {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    color: #999;
+    text-align: center;
+}
+
+.header {
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sort {
+    width: 20px;
+}
+
+.item-content {
+    width: 120px;
+}
+
+.deadline {
+    width: 60px
+}
+
+.status {
+    width: 60px;
+}
+
+.handle {
+    width: 30px;
+    color: #000;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.expire {
+    color: #ff0033;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+}
+
+.add {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.input-item {
+    width: 300px;
+    margin: 5px auto;
+
+    > input {
+        width: 200px;
+        padding: 3px 5px;
+        border: 1px solid #999;
+        border-radius: 5px;
+
+        color: #999;
+    }
+}
+
+input {
+    outline: none;
+}
+
+.dialog-handle {
+    padding: 10px 20px;
+    text-align: center;
+
+    > a {
+        display: inline-block;
+        width: 60px;
+
+        color: #999;
+        text-align: center;
+
+        &.confirm {
+            color: #1f64cd;
+        }
+    }
+}

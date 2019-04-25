@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "todolist",
+    "version": "1.0",
+    "description": "todolist",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "个人计划列表",
+        "default_popup": "./dist/popup.html"
+    },
+    "permissions": [
+        "*://*/",
+        "notifications"
+    ],
+    "web_accessible_resources": [
+        "images/*.png"
+    ],
+    "background": {
+        "page": "./dist/background.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' http://localhost:4000; object-src 'self';"
+}
