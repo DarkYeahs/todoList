@@ -32,7 +32,7 @@
                 </tr>
             </tbody>
         </table>
-        <a href="javascript:;"
+        <a href="#"
             class="add"
             @click.stop="toggleDialogVisible">+</a>
         <div class="dialog"
@@ -48,9 +48,9 @@
                     v-model="deadline" />
             </div>
             <div class="dialog-handle">
-                <a href="javascript:;"
+                <a href="#"
                     @click.stop="cancel">取消</a>
-                <a href="javascript:;"
+                <a href="#"
                     class="confirm"
                     @click.stop="confirm">确认</a>
             </div>
